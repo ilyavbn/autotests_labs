@@ -2,5 +2,23 @@
   "dependencies": {
     "geckodriver": "^3.0.1",
     "selenium-webdriver": "^4.1.1"
-  }
+  },
+  "name": "autotests_labs",
+  "description": "![npm test output](pics/lab1.png)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilyavbn/autotests_labs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilyavbn/autotests_labs/issues"
+  },
+  "homepage": "https://github.com/ilyavbn/autotests_labs#readme"
 }
