@@ -1,12 +1,26 @@
-//const arrays = require("./array_utils.js")
+const arrays = require("./array_utils.js")
 
-//const sumTestCases = [[1,2,3,6],12];
+let values;
+let sum;
+let positive;
+let negative;
 
-//describe("sum of array elements",() => {
-	//test.each(sumTestCases)(
-		//"sum of %p array is: %p",
-		//(firstArr,firstRes) => {
-			//expect(arrays.arraySum(firstArr).toEqual(firstRes))
-		//}
-	//)
-//})
+beforeAll(() => {
+		positive = [2,1,3];
+		negative = [-2,-1,-2];
+		values = positive.concat(negative);
+		sum = values.reduce((x,y) => x + y, 0);
+})
+
+test('sum of values  = 2', () => {
+		expect(arrays.arraySum(values)).toBe(sum);
+
+});
+test('Should be positive', () => {
+		expect(arrays.arrayPositive(values)).toEqual(positive);
+
+});
+test('Should be negative', () => {
+		expect(arrays.arrayNegative(values)).toEqual(negative);
+
+});

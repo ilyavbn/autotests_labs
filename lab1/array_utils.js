@@ -1,9 +1,11 @@
-function arraySum(nums){
-	result = 0;
-	for (let num of nums){
-		result += nums[num];	
-	}
-	return result;
+function arraySum(nums) {
+  let result = 0;
+
+  nums.forEach(item => {
+    result += item;
+  });
+
+  return result;
 }
 
 function arrayPositive(nums){
@@ -25,3 +27,5 @@ function arrayNegative(nums){
 	}
 	return result;
 }
+ module.exports = {arraySum, arrayNegative,arrayPositive};
+
